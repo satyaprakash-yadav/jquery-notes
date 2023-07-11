@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jquery cdn link -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Effect Method</title>
+</head>
+<body>
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    
+    <br><br>
+    <div id="colored-id" style="background-color: brown;height: 100px;width: 100px;"></div>
+
+    <!-- jquery code -->
+    <script>
+        // $("#btn1").click(function(){
+        //     $("#colored-id").animate({
+        //         opacity:'0.5',
+        //         height:'200px',
+        //         width:'300px'
+        //     }, 5000); // 5 sec time delay
+        // });
+
+        // $("#btn2").click(function(){
+        //     $("#colored-id").stop(); // control animation also resume from that position
+        // });
+
+        // $("#btn1").click(function(){ 
+        //     $("#colored-id").hide(3000, function(){ // callback function (which is anonymous func)
+        //         alert("div hidden "); optional parameter
+        //     });    //  ↖
+        //     // alert("div is now hidden ")     // loop whole execute both line if first line not completed 
+        // });
+
+        // chain in :- multiple effect in one Element
+        $("#btn1").click(function(){
+            $("#colored-id").css("background-color","red").slideUp(2000).slideDown(1000);
+        });
+
+    </script>
+
+</body>
+</html>

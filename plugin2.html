@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery cdn link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- third party css -->
+    <link
+      rel="stylesheet"
+      href="/third party/magnify-image-hover/css/jquery.jqZoom.css"
+    />
+    <!-- jquery link js -->
+    <script src="/third party/magnify-image-hover/js/jquery.jqZoom.js"></script>
+    <title>Plugins2</title>
+  </head>
+  <body>
+    <div class="zoom-box">
+      <img id="product"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAN39CbAUeJB2IGdj_BpUq2nlsIZWDF_WFyp9zscFXyw&s"
+        width="200"
+        height="150"
+        style="border: 1px solid black"
+      />
+    </div>
+
+    <!-- jquery code -->
+    <script>
+      $(function () {
+        $("#product").jqZoom({
+          selectorWidth: 30,
+          selectorHeight: 30,
+          viewerWidth: 200,
+          viewerHeight: 200,
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Traversing HTML</title> <!--traversing means move through -->
+</head>
+<body>
+    <ul id="list">    <!-- grandparent -->
+        <li>    <!-- parent -->
+            <span id="span1">item 1</span>  <!-- child -->
+        </li> <!-- both <li> is siblings -->
+        <li>    <!-- parent -->
+            <span id="span2">item 2</span>
+        </li>
+    </ul>
+
+    <!-- sibling traversal -->
+    <ul id="list">
+        <li>child 1</li>
+        <li>child 2</li>
+        <li id="item1">child 3</li>
+        <li>child 4</li>
+        <li id="item2">child 5</li>
+        <li>child 6</li>
+    </ul>
+    
+    
+    <!-- jquery coding -->
+    <script>
+        // var val = $("#span1").parent(); // use "s" for all parent
+        // val.css("border","1px solid red");
+
+        // var val = $("#span1").parentsUntil("ul"); // where stop
+        // val.css("border","1px solid red");
+        
+        // var val = $("#list").children(); // select child
+        // val.css("border","1px solid red");
+
+        // var val = $("#list").find("#span2") // find() :- to find particular child
+        // val.css("border","1px solid red");
+
+
+        // sibling traversal
+        // var val = $("#item1").siblings(); // select all siblings without selected
+        // var val = $("#item1").next();
+        // var val = $("#item1").nextAll();    // select next all
+        // var val = $("#item1").nextUntil("#item2");
+        // var val = $("#item1").prevUntil("#item2");
+        // var val = $("#item1").prev();
+        // var val = $("#item1").prevAll();
+
+        // val.css("border","1px solid red");
+
+    </script>
+</body>
+</html>

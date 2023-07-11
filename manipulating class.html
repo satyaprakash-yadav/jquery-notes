@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- css style -->
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+        .red{
+            background-color: red;
+        }
+        .circle{
+            border-radius: 50%;
+        }
+    </style>
+
+    <title>Manipulating class</title>
+</head>
+<body>
+    <div id="box" class="box red"></div>
+
+    <br><br>
+    <button id="btn">Click</button>
+
+    <!-- jquery code -->
+    <script>
+        $("#btn").click(function(){
+            // $("#box").addClass("circle black");    // add class
+            // $("#box").removeClass("red");           // remove class
+            // $("#box").toggleClass("circle");         // toggleClass
+
+            // get css property
+            // var css = $("#box").css("background-color"); 
+            // alert(css);     // get rgb
+
+            // set bck color
+            // $("#box").css("background-color","yellow");
+            // $("#box").css({                 // set multiple css property
+            //     "background-color": "green",
+            //     "border":"3px solid black"
+            // });
+
+            // var val = $("#box").outerWidth(true);      // get margin , padding , width 
+            // alert(val);
+
+        });
+
+    </script>
+    
+</body>
+</html>

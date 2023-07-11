@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Events Method</title>
+</head>
+<body>
+
+    <p id="para">This is a paragraph tag</p>
+
+    <button id="btn">Click</button>
+    <br><br>
+    <div id="colored-div" style="background-color: brown; height: 100px; width: 100px;"></div>
+    <!-- jquery code  -->
+    <script>
+        // $("#btn").click(function(){
+            // alert("Clicked!");
+            // $("#para").hide();  // event handled
+            // $(this).hide();  // "this" current selector or initial selector
+        // });
+
+        // double click event
+        // $("#btn").dblclick(function(){
+        //     $(this).hide();
+        // });
+
+        // mouse enter event 
+        // $("#colored-div").mouseenter(function(){
+        //     $("#para").hide();
+        // });
+        
+        // mouse leave event 
+        // $("#colored-div").mouseleave(function(){
+        //     $("#para").hide();
+        // });
+
+        // mouse enter + mouse leave = hover
+        // $("#colored-div").hover(function(){
+        //     $("#para").hide();
+        // },
+        // function(){
+        //     $("#para").show();
+        // });
+
+        // on function multiple event occur in multiple element then we used.
+        // $("#colored-div").on({
+        //     click: function(){
+        //         $(this).css("background-color","red"); // passed 2 parameter css_property_name , value
+
+        //     },
+        //     mouseenter:function(){
+        //         $(this).css("background-color","green");
+
+        //     },
+        //     mouseleave:function(){
+        //         $(this).css("background-color","yellow");
+
+        //     }
+            
+        // });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Manipulating HTML</title>
+</head>
+<body>
+    <p id="para">This is a paragraph tag</p>
+
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+    
+    <br><br>
+    <div id="colored-id" style="background-color: brown;height: 100px;width: 100px;">
+        <p>
+            This is a p tag
+        </p>
+    </div>
+
+    <br><br>
+    <input type="text" id="input1">
+    <a href="#" id="link" class="red">link</a>
+
+    <!-- before -->
+    <ul id="list">
+        <!-- prepend -->
+        <li>red</li>
+        <li>black</li>
+        <li>green</li>
+        <!-- append -->
+    </ul>
+    <!-- after -->
+
+    <!-- jquery code -->
+    <script>
+        // $("#btn1").click(function(){
+        //     var txt = $("#colored-id").text();    // fetch text and text func hide <p>...</p> 
+        //     var txt = $("#colored-id").html();   // if we want tag also then write html func
+        //     $("#colored-id").html("<h4>New Head Tag</h4>");  // set new tag or values inside html tag ()  or get()
+        //     // alert(txt);
+        // });
+
+        // get value from text input ,firstly create input field
+        // $("#btn1").click(function(){
+        //     //var val = $("#input1").val();          // val() :- get value
+        //     //alert(val);
+
+        //     $("#input1").val("Satyaprakash Yadav");     // val(...) :- set value
+        // });
+
+        // get or set attribute
+        // $("#btn1").click(function(){
+        //     // var val = $("#link").attr("href");  // attr() :- fetch or get value
+        //     // alert(val);
+
+        //     // $("#link").attr("class","black");   // set single attr 
+
+        //     // then we want change multiple attr
+        //     $("#link").attr({
+        //         "class":"black",
+        //         "href":"https://www.python.org"
+        //     });
+
+        // });
+
+        // add 4 html element in other places
+        // $("#list").append("<li>yellow</li>");
+        // $("#list").after("<p>After element</p>")
+        // $("#list").before("<p>Before element</p>");
+        // $("#list").empty();     // remove children
+        // $("#list").remove();        // delete parent tag like <ul>
+
+        
+
+    </script>
+
+
+</body>
+</html>

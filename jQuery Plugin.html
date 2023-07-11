@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jquery cdn link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <!-- third party folder -->
+    <link rel="stylesheet" href="/third party/countdown/css/flipTimer.css" />
+    <!-- jquery src js -->
+    <script src="/third party/countdown/js/jquery.flipTimer.js"></script>
+    <title>Plugins</title>
+  </head>
+  <body style="background-color: rgb(175, 215, 241);">
+    <center>
+    <h1>Coming Soon..</h1>
+    <div class="flipTimer">
+      <div class="days"></div>
+      <div class="hours"></div>
+      <div class="minutes"></div>
+      <div class="seconds"></div>
+    </div>
+
+    <!-- jquery code  -->
+    <script>
+      $(document).ready(function () {
+        $(".flipTimer").flipTimer({
+          // count up or countdown
+          direction: "down",
+
+          // the target <a href="https://www.jqueryscript.net/time-clock/">date</a>
+          date: "January 15, 2023 08:30:30",
+
+          // callback works only with direction = "down"
+          callback: function () {
+            alert("times up!");
+          },
+        });
+      });
+    </script>
+    </center>
+  </body>
+</html>
